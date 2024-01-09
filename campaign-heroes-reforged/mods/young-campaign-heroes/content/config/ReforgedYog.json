@@ -1,0 +1,71 @@
+{
+  "core:yog" :
+  {
+    "class" : "battlemage",
+    "female" : false,
+    "special" : false,
+
+    "texts" :
+    {
+      "name" : "Yog",
+      "biography" : "Yog studied many years with the Wizards of Bracada, but he would rather spend his time engaging in swordplay rather than studying magic.",
+      "specialty" :
+      {
+        "description" : "Casts Chain Lightning with increased effect, based on hero level compared to the level of the target unit.",
+        "tooltip" : "Casts Chain Lightning with increased effect, based on hero level compared to the level of the target unit.",
+        "name" : "Chain Lightning"
+      }
+    },
+
+    "images" :
+    {
+      "specialtySmall" : "Specialty_Chain_Lightning_Small.png",
+      "specialtyLarge" : "Specialty_Chain_Lightning.png",
+      "small" : "HPS096BR.png",
+      "large" : "HPL096BR.png"
+    },
+
+    "army" :
+    [
+      {
+        "creature" : "goblin",
+        "max" : 25,
+        "min" : 15
+      },
+      {
+        "creature" : "goblinWolfRider",
+        "max" : 7,
+        "min" : 5
+      },
+      {
+        "creature" : "orc",
+        "max" : 6,
+        "min" : 4
+      }
+    ],
+
+    "skills" :
+    [
+      {
+        "level" : "basic",
+        "skill" : "offence"
+      },
+	  {
+        "level" : "basic",
+        "skill" : "tactics"
+      }
+    ],
+    
+	"specialty" : {
+		"bonuses" : {
+			"chainLightning" : {
+				"subtype" : "spell.chainLightning",
+				"type" : "SPECIAL_SPELL_LEV",
+				"updater" : "TIMES_HERO_LEVEL",
+				"val" : 3
+			}
+		},
+		"creature" : null
+	}
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "reforgedCatherine" :
+  {
+    "class" : "knight",
+    "female" : true,
+    "special" : false,
+
+    "texts" :
+    {
+      "name" : "Queen Catherine",
+      "biography" : "As the reigning queen of Erathia, Queen Catherine Ironfist continues to wage war to secure her homeland's borders and restablished the peace built by her father. However, support for her position is faltering as the country grows weary of war.",
+      "specialty" :
+      {
+        "description" : "Increases the speed of any Swordsmen or Crusaders by 1 and their Attack and Defense skills by 5% for every 4 levels (rounded up).",
+        "tooltip" : "Increases the speed of any Swordsmen or Crusaders by 1 and their Attack and Defense skills by 5% for every 4 levels (rounded up).",
+        "name" : "Swordsmen"
+      }
+    },
+
+    "images" :
+    {
+      "specialtySmall" : "Specialty_Swordsmen_Small.png",
+      "specialtyLarge" : "Specialty_Swordsmen.png",
+      "small" : "Hero_Catherine_Small.png",
+      "large" : "Hero_Catherine.png"
+    },
+
+    "army" :
+    [
+      {
+        "creature" : "pikeman",
+        "max" : 20,
+        "min" : 10
+      },
+      {
+        "creature" : "archer",
+        "max" : 7,
+        "min" : 4
+      },
+      {
+        "creature" : "griffin",
+        "max" : 3,
+        "min" : 2
+      }
+    ],
+
+    "skills" :
+    [
+      {
+        "level" : "basic",
+        "skill" : "offence"
+      },
+	  {
+        "level" : "basic",
+        "skill" : "leadership"
+      }
+    ],
+    
+	"specialty" : 
+	{
+		"creature" : "swordsman"
+	}
+  }
+}

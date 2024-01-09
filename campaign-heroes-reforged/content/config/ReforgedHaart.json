@@ -1,0 +1,63 @@
+{
+  "reforgedHaart" :
+  {
+    "class" : "deathknight",
+    "female" : false,
+    "special" : false,
+
+    "texts" :
+    {
+      "name" : "Lord Haart",
+      "biography" : "Resurrected by his cult of necromantic followers, Lord Haart has emerged a more powerful foe than before.",
+      "specialty" :
+      {
+        "description" : "Increases the Attack and Defense skills of any Black Knights or Dread Knights +5 and damage +10",
+        "tooltip" : "Increases the Attack and Defense skills of any Black Knights or Dread Knights +5 and damage +10",
+        "name" : "Black Knights"
+      }
+    },
+
+    "images" :
+    {
+      "specialtySmall" : "Specialty_Black_Knights_Small.png",
+      "specialtyLarge" : "Specialty_Black_Knights.png",
+      "large" : "Hero_Lord_Haart_Death_Knight.png",
+      "small" : "Hero_Lord_Haart_Death_Knight_small.png"
+    },
+
+    "army" :
+    [
+      {
+        "creature" : "skeleton",
+        "max" : 30,
+        "min" : 20
+      },
+      {
+        "creature" : "walkingDead",
+        "max" : 6,
+        "min" : 4
+      },
+      {
+        "creature" : "wight",
+        "max" : 6,
+        "min" : 4
+      }
+    ],
+
+	"spellbook": 
+	[ "slow" ],
+
+    "skills" :
+    [ 
+	  {
+        "level" : "advanced",
+        "skill" : "necromancy"
+      }
+    ],
+    
+	"specialty" : 
+	{
+		"creature" : "blackKnight"
+	}
+   }
+}

@@ -1,0 +1,73 @@
+{
+  "reforgedOrdwald" :
+  {
+    "class" : "warlock",
+    "female" : false,
+    "special" : false,
+
+    "texts" :
+    {
+      "name" : "Ordwald",
+      "biography" : "His father gave him a warrior’s name, but Ordwald rejected the warrior’s arts and turned to magic. He is an old, but powerful, warlock in a land where lords almost never live long enough to grow old.",
+      "specialty" :
+      {
+        "description" : "Casts Slayer with increased effect, based on his level compared to the level of the target unit.",
+        "tooltip" : "Casts Slayer with increased effect, based on his level compared to the level of the target unit.",
+        "name" : "Slayer"
+      }
+    },
+
+    "images" :
+    {
+      "specialtySmall" : "Specialty_Slayer_Small.png",
+      "specialtyLarge" : "Specialty_Slayer.png",
+      "large" : "Hero_Ordwald.png",
+      "small" : "Hero_Ordwald_Small.png"
+    },
+
+    "army" :
+    [
+      {
+        "creature" : "troglodyte",
+        "max" : 24,
+        "min" : 12
+      },
+      {
+        "creature" : "harpy",
+        "max" : 5,
+        "min" : 3
+      },
+      {
+        "creature" : "beholder",
+        "max" : 6,
+        "min" : 3
+      }
+    ],
+
+	"spellbook": 
+	[ "slayer" ],
+
+    "skills" :
+    [ 
+	  {
+        "level" : "basic",
+        "skill" : "wisdom"
+      },
+	  
+	  {
+        "level" : "basic",
+        "skill" : "scholar"
+      }
+    ],
+    
+		"specialty" : {
+			"bonuses" : {
+				"slayer" : {
+					"addInfo" : 1,
+					"subtype" : "spell.slayer",
+					"type" : "SPECIAL_PECULIAR_ENCHANT"
+				}
+			}
+		}
+  }
+}

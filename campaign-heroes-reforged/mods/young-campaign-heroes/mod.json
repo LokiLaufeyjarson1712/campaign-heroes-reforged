@@ -1,0 +1,26 @@
+{
+	"name" : "Younger Heroes",
+	"description" : "This submod turns a few heroes into their younger counterparts, from earlier in the timeline.",
+	"author" : "Loki Laufeyjarson",
+	"version" : "1.00",
+	"contact" : "https://ko-fi.com/lokilaufeyjarson",
+	"modType" : "Heroes",
+	"changelog" :
+    {
+		"1.0"   : [ "Initial release" ]
+    },
+	"compatibility" :
+	{
+		"min" : "1.4.0"
+	},
+	"heroes" :
+	[
+		"config/ReforgedCatherine.json",
+		"config/ReforgedGem.json",
+		"config/ReforgedMutare.json",
+		"config/ReforgedYog.json"
+	],	
+	"translations" : [
+		"config/ReforgedYounger.json",
+	]
+}

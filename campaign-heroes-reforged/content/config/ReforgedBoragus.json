@@ -1,0 +1,64 @@
+{
+  "reforgedBoragus" :
+  {
+    "class" : "barbarian",
+    "female" : false,
+    "special" : false,
+
+    "texts" :
+    {
+      "name" : "King Boragus",
+      "biography" : "King Winston Boragus of Krewlod's special kinship with the ogres he commands in battle has taken him far in his quest for power.",
+      "specialty" :
+      {
+        "description" : "Increases the speed of any Ogres or Ogre Magi by 1 and their Attack and Defense skills by 5% for every 4 levels (rounded up).",
+        "tooltip" : "Increases the speed of any Ogres or Ogre Magi by 1 and their Attack and Defense skills by 5% for every 4 levels (rounded up).",
+        "name" : "Ogres"
+      }
+    },
+
+    "images" :
+    {
+      "specialtySmall" : "Specialty_Ogres_Small.png",
+      "specialtyLarge" : "Specialty_Ogres.png",
+      "large" : "Hero_Boragus.png",
+      "small" : "Hero_Boragus_Small.png"
+    },
+
+    "army" :
+    [
+      {
+        "creature" : "goblin",
+        "max" : 25,
+        "min" : 15
+      },
+      {
+        "creature" : "goblinWolfRider",
+        "max" : 7,
+        "min" : 5
+      },
+      {
+        "creature" : "orc",
+        "max" : 6,
+        "min" : 4
+      }
+    ],
+	
+    "skills" :
+    [ 
+	  {
+        "level" : "basic",
+        "skill" : "offence"
+      },
+	  
+	  {
+        "level" : "basic",
+        "skill" : "tactics"
+      }
+    ],
+    
+		"specialty" : {
+			"creature" : "ogre"
+		},
+  }
+}

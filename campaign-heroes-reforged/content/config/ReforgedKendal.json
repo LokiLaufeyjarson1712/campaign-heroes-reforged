@@ -1,0 +1,72 @@
+{
+  "reforgedKendal" :
+  {
+    "class" : "knight",
+    "female" : false,
+    "special" : false,
+
+    "texts" :
+    {
+      "name" : "General Kendal",
+      "biography" : "Following King Gryphonheart's murder, General Morgan Kendal temporarily assumed the throne until a new successor could be found. History shall remember him as the only ruler of Erathia who allowed the capital city of Steadwick to be captured.",
+      "specialty" :
+      {
+        "description" : "Receives a 5% per level bonus to estates skill.",
+        "tooltip" : "Receives a 5% per level bonus to estates skill.",
+        "name" : "Estates"
+      }
+    },
+
+    "images" :
+    {
+      "specialtySmall" : "Specialty_Estates_Small.png",
+      "specialtyLarge" : "Specialty_Estates.png",
+      "large" : "Hero_General_Kendal.png",
+      "small" : "Hero_General_Kendal_Small.png"
+    },
+
+    "army" :
+    [
+      {
+        "creature" : "pikeman",
+        "max" : 20,
+        "min" : 10
+      },
+      {
+        "creature" : "archer",
+        "max" : 7,
+        "min" : 4
+      },
+      {
+        "creature" : "swordsman",
+        "max" : 3,
+        "min" : 2
+      }
+    ],
+
+    "skills" :
+    [
+      {
+        "level" : "basic",
+        "skill" : "estates"
+      },
+	  {
+        "level" : "basic",
+        "skill" : "leadership"
+      }
+    ],
+    
+		"specialty" : {
+			"bonuses" : {
+				"estates" : {
+					"subtype" : "resource.gold",
+					"type" : "GENERATE_RESOURCE",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 5,
+					"valueType" : "PERCENT_TO_TARGET_TYPE",
+					"targetSourceType" : "SECONDARY_SKILL"
+				}
+			}
+		}
+   }
+}

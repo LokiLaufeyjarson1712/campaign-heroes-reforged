@@ -1,0 +1,64 @@
+{
+  "campaign-heroes-reforged:reforgedCatherine" :
+  {
+    "class" : "knight",
+    "female" : true,
+    "special" : false,
+
+    "texts" :
+    {
+      "name" : "Queen Catherine",
+      "biography" : "Queen Catharine Ironfist of Enroth is the eldest and only surviving daughter of the late King Gryphonheart. She returned to Erathia upon learning of her father's death, discovering only then that the nation of her birth was being torn apart by its enemies.",
+      "specialty" :
+      {
+        "description" : "Increases the speed of any Swordsmen or Crusaders by 1 and their Attack and Defense skills by 5% for every 4 levels (rounded up).",
+        "tooltip" : "Increases the speed of any Swordsmen or Crusaders by 1 and their Attack and Defense skills by 5% for every 4 levels (rounded up).",
+        "name" : "Swordsmen"
+      }
+    },
+
+    "images" :
+    {
+      "specialtySmall" : "Specialty_Swordsmen_Small.png",
+      "specialtyLarge" : "Specialty_Swordsmen.png",
+      "small" : "Hero_Catherine_Small.png",
+      "large" : "Hero_Catherine.png"
+    },
+
+    "army" :
+    [
+      {
+        "creature" : "pikeman",
+        "max" : 20,
+        "min" : 10
+      },
+      {
+        "creature" : "archer",
+        "max" : 7,
+        "min" : 4
+      },
+      {
+        "creature" : "griffin",
+        "max" : 3,
+        "min" : 2
+      }
+    ],
+
+    "skills" :
+    [
+      {
+        "level" : "basic",
+        "skill" : "offence"
+      },
+	  {
+        "level" : "basic",
+        "skill" : "leadership"
+      }
+    ],
+    
+	"specialty" : 
+	{
+		"creature" : "swordsman"
+	}
+  }
+}

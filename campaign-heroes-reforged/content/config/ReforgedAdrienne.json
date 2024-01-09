@@ -1,0 +1,62 @@
+{
+  "reforgedAdrienne" :
+  {
+    "class" : "witch",
+    "female" : true,
+    "special" : false,
+
+    "texts" :
+    {
+      "name" : "Adrienne",
+      "biography" : "With a burning desire to gain in power and to protect her homeland, Adrienne risked being a social outcast and hated by her own people to follow her passion.",
+      "specialty" :
+      {
+        "description" : "Starts with Expert Fire Magic.",
+        "tooltip" : "Starts with Expert Fire Magic.",
+        "name" : "Fire Magic"
+      }
+    },
+
+    "images" :
+    {
+      "specialtySmall" : "Specialty_Fire_Magic_Small.png",
+      "specialtyLarge" : "Specialty_Fire_Magic.png",
+      "large" : "Hero_Adrienne.png",
+      "small" : "Hero_Adrienne_Small.png"
+    },
+
+    "army" :
+    [
+      {
+        "creature" : "gnoll",
+        "max" : 25,
+        "min" : 15
+      },
+      {
+        "creature" : "lizardman",
+        "max" : 7,
+        "min" : 4
+      },
+      {
+        "creature" : "serpentFly",
+        "max" : 4,
+        "min" : 3
+      }
+    ],
+	
+    "skills" :
+    [ 
+	  {
+        "level" : "basic",
+        "skill" : "wisdom"
+      },
+
+	  {
+        "level" : "expert",
+        "skill" : "fireMagic"
+      }
+    ],
+    
+	"specialty" : { "bonuses" : {  } }
+  }
+}

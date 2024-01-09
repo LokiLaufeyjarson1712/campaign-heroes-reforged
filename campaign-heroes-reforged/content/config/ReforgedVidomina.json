@@ -1,0 +1,73 @@
+{
+  "reforgedVidomina" :
+  {
+    "class" : "necromancer",
+    "female" : true,
+    "special" : false,
+
+    "texts" :
+    {
+      "name" : "Vidomina",
+      "biography" : "Vidomina should have been dead a long time ago. Her 'go anywhere, do anything' attitude has put her into situations that she should have never survived. Her biggest secret is she yearns to become a true Necromancer.",
+      "specialty" :
+      {
+        "description" : "Casts Fortune which always adds +3 to Luck.",
+        "tooltip" : "Casts Fortune which always adds +3 to Luck.",
+        "name" : "Fortune"
+      }
+    },
+
+    "images" :
+    {
+      "specialtySmall" : "Specialty_Fortune_Small.png",
+      "specialtyLarge" : "Specialty_Fortune.png",
+      "large" : "Hero_Vidomina.png",
+      "small" : "Hero_Vidomina_Small.png"
+    },
+
+    "army" :
+    [
+      {
+        "creature" : "skeleton",
+        "max" : 40,
+        "min" : 30
+      },
+      {
+        "creature" : "walkingDead",
+        "max" : 7,
+        "min" : 5
+      },
+      {
+        "creature" : "wight",
+        "max" : 5,
+        "min" : 4
+      }
+    ],
+
+	"spellbook": 
+	[ "fortune" ],
+
+    "skills" :
+    [ 
+	  {
+        "level" : "basic",
+        "skill" : "wisdom"
+      },
+	  
+	  {
+        "level" : "basic",
+        "skill" : "intelligence"
+      }
+    ],
+    
+		"specialty" : {
+			"bonuses" : {
+				"fortune" : {
+					"addInfo" : 3,
+					"subtype" : "spell.fortune",
+					"type" : "SPECIAL_FIXED_VALUE_ENCHANT"
+				}
+			}
+		}
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "reforgedRoland" :
+  {
+    "class" : "knight",
+    "female" : false,
+    "special" : false,
+
+    "texts" :
+    {
+      "name" : "King Roland",
+      "biography" : "Recently freed from the Kreegans, King Roland Ironfist of the Kingdom of Enroth respectfully serves as a general in Erathia's military under his wife Catherine. Someday soon these conflicts will end, and he and Catherine will return to Enroth. However, both must decide what will happen to the Erathian throne.",
+      "specialty" :
+      {
+        "description" : "Increases the speed of any Swordsmen or Crusaders by 1 and their Attack and Defense skills by 5% for every 4 levels (rounded up).",
+        "tooltip" : "Increases the speed of any Swordsmen or Crusaders by 1 and their Attack and Defense skills by 5% for every 4 levels (rounded up).",
+        "name" : "Swordsmen"
+      }
+    },
+
+    "images" :
+    {
+      "specialtySmall" : "Specialty_Swordsmen_Small.png",
+      "specialtyLarge" : "Specialty_Swordsmen.png",
+      "large" : "Hero_Roland.png",
+      "small" : "Hero_Roland_Small.png"
+    },
+
+    "army" :
+    [
+      {
+        "creature" : "pikeman",
+        "max" : 10,
+        "min" : 20
+      },
+      {
+        "creature" : "archer",
+        "max" : 7,
+        "min" : 4
+      },
+      {
+        "creature" : "swordsman",
+        "max" : 3,
+        "min" : 2
+      }
+    ],
+
+    "skills" :
+    [
+      {
+        "level" : "basic",
+        "skill" : "leadership"
+      },
+	  {
+        "level" : "basic",
+        "skill" : "armorer"
+      }
+    ],
+    
+	"specialty" : 
+	{
+		"creature" : "swordsman"
+	}
+	
+   }
+}

@@ -1,0 +1,80 @@
+{
+  "reforgedMutare" :
+  {
+    "class" : "overlord",
+    "female" : true,
+    "special" : false,
+
+    "texts" :
+    {
+      "name" : "Mutare Drake",
+      "biography" : "Drinking the Vial of Dragon Blood, Mutare became a sentient dragon. Some wonder if her transformation foretells the coming of the Dragon Father.",
+      "specialty" :
+      {
+        "description" : "All dragons receive +5 Att, +5 Def.",
+        "tooltip" : "All dragons receive +5 Att, +5 Def.",
+        "name" : "Dragons"
+      }
+    },
+
+    "images" :
+    {
+      "specialtySmall" : "Specialty_Dragons_Small.png",
+      "specialtyLarge" : "Specialty_Dragons.png",
+      "large" : "Hero_Mutare_Drake.png",
+      "small" : "Hero_Mutare_Drake_Small.png"
+    },
+
+    "army" :
+    [
+      {
+        "creature" : "troglodyte",
+        "max" : 30,
+        "min" : 20
+      },
+      {
+        "creature" : "harpy",
+        "max" : 8,
+        "min" : 6
+      },
+      {
+        "creature" : "beholder",
+        "max" : 4,
+        "min" : 3
+      }
+    ],
+
+	"spellbook": 
+	[ "magicArrow" ],
+
+    "skills" :
+    [ 
+	  {
+        "level" : "basic",
+        "skill" : "tactics"
+      },
+	  
+	  {
+        "level" : "basic",
+        "skill" : "estates"
+      }
+    ],
+    
+		"specialty" : {
+			"base" : {
+				"limiters" : [
+					{
+						"parameters" : [ "DRAGON_NATURE" ],
+						"type" : "HAS_ANOTHER_BONUS_LIMITER"
+					}
+				],
+				"type" : "PRIMARY_SKILL",
+				"val" : 5
+			},
+			"bonuses" : {
+				"attack" : { "subtype" : "primarySkill.attack" },
+				"defence" : { "subtype" : "primarySkill.defence" }
+			}
+		}
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "reforgedKilgor" :
+  {
+    "class" : "barbarian",
+    "female" : false,
+    "special" : false,
+
+    "texts" :
+    {
+      "name" : "Kilgor",
+      "biography" : "Since defeating his father for rulership of his clan, Kilgor has earned much fame throughout Krewlod. Many consider him the only man capable of winning the generational Festival of Life.",
+      "specialty" :
+      {
+        "description" : "Behemoths and Ancient Behemoths under Kilgor's command receive +5 Attack, +5 Defense and +10 Damage.",
+        "tooltip" : "Behemoths and Ancient Behemoths under Kilgor's command receive +5 Attack, +5 Defense and +10 Damage.",
+        "name" : "Behemoths"
+      }
+    },
+
+    "images" :
+    {
+      "specialtySmall" : "Specialty_Behemoths_Small.png",
+      "specialtyLarge" : "Specialty_Behemoths.png",
+      "large" : "Hero_Kilgor.png",
+      "small" : "Hero_Kilgor_Small.png"
+    },
+
+    "army" :
+    [
+      {
+        "creature" : "goblin",
+        "max" : 25,
+        "min" : 15
+      },
+      {
+        "creature" : "goblinWolfRider",
+        "max" : 7,
+        "min" : 5
+      },
+      {
+        "creature" : "orc",
+        "max" : 6,
+        "min" : 4
+      }
+    ],
+	
+    "skills" :
+    [ 
+	  {
+        "level" : "advanced",
+        "skill" : "offence"
+      }
+    ],
+    
+		"specialty" : {
+			"creature" : "behemoth"
+		},
+  }
+}

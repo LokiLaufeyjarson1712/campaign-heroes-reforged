@@ -1,0 +1,36 @@
+{
+	"name" : "Campaign Heroes: Reforged",
+	"description" : "The mod is a rework of the 'Campaign Heroes' mod by avatar. My rework adds all 14 campaign heroes to the normal hero roster so that they can be used on any single player map that allows hero selection, including random maps.",
+	"author" : "Loki Laufeyjarson",
+	"version" : "1.00",
+	"contact" : "https://ko-fi.com/lokilaufeyjarson",
+	"modType" : "Heroes",
+	"changelog" :
+    {
+		"1.00"   : [ "Initial release" ]
+    },
+	"compatibility" :
+	{
+		"min" : "1.4.0"
+	},
+	"conflicts": [
+		"campaign-heroes"
+	],
+	"heroes" :
+	[
+		"config/ReforgedCatherine.json",
+		"config/ReforgedKendal.json",
+		"config/ReforgedRoland.json",
+		"config/ReforgedGelu.json",
+		"config/ReforgedDracon.json",
+		"config/ReforgedXeron.json",
+		"config/ReforgedHaart.json",
+		"config/ReforgedFinneas.json",
+		"config/ReforgedVidomina.json",	
+		"config/ReforgedOrdwald.json",
+		"config/ReforgedMutare.json",
+		"config/ReforgedBoragus.json",
+		"config/ReforgedKilgor.json",
+		"config/ReforgedAdrienne.json"
+	]	
+}

@@ -1,0 +1,71 @@
+{
+  "reforgedDracon" :
+  {
+    "class" : "wizard",
+    "female" : false,
+    "special" : false,
+
+    "texts" :
+    {
+      "name" : "Dracon",
+      "biography" : "Considered by many to be a magical genius, Dracon seeks to become history's greatest Dragon Slayer. Unlike his fellow Wizards, Dracon eschews decorative attire for more practical battle gear.",
+      "specialty" :
+      {
+        "description" : "Can upgrade Monks, Zealots, Magi and Arch Magi to Enchanters.",
+        "tooltip" : "Can upgrade Monks, Zealots, Magi and Arch Magi to Enchanters.",
+        "name" : "Enchanters"
+      }
+    },
+
+    "images" :
+    {
+      "specialtySmall" : "Specialty_Enchanters_Small.png",
+      "specialtyLarge" : "Specialty_Enchanters.png",
+      "large" : "Hero_Dracon.png",
+      "small" : "Hero_Dracon_Small.png"
+    },
+
+    "army" :
+    [
+      {
+        "creature" : "enchanter",
+        "max" : 6,
+        "min" : 6
+      },
+      {
+        "creature" : "enchanter",
+        "max" : 3,
+        "min" : 3
+      },
+      {
+        "creature" : "enchanter",
+        "max" : 1,
+        "min" : 1
+      }
+    ],
+
+	"spellbook": 
+	[ "haste" ],
+
+    "skills" :
+    [
+	  {
+        "level" : "advanced",
+        "skill" : "wisdom"
+      }
+    ],
+    
+		"specialty" : {
+			"base" : {
+				"addInfo" : "creature.enchanter",
+				"type" : "SPECIAL_UPGRADE"
+			},
+			"bonuses" : {
+				"archMage2enchanter" : { "subtype" : "creature.archMage" },
+				"mage2enchanter" : { "subtype" : "creature.mage" },
+				"monk2enchanter" : { "subtype" : "creature.monk" },
+				"zealot2enchanter" : { "subtype" : "creature.zealot" }
+			}
+		}
+   }
+}

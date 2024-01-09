@@ -1,0 +1,74 @@
+{
+  "reforgedFinneas" :
+  {
+    "class" : "necromancer",
+    "female" : false,
+    "special" : false,
+
+    "texts" :
+    {
+      "name" : "King Finneas",
+      "biography" : "Though King Finneas Vilmar of Deyja's thirst for power makes him a virtually unstoppable Necromancer, the ability of political manipulation and battle tactics elude him. He has joined with Sandro so he can use his skills to move himself through the ranks.",
+      "specialty" :
+      {
+        "description" : "Casts Animate Dead with increased effect, based on hero level compared to the level of the target unit.",
+        "tooltip" : "Casts Animate Dead with increased effect, based on hero level compared to the level of the target unit.",
+        "name" : "Animate Dead"
+      }
+    },
+
+    "images" :
+    {
+      "specialtySmall" : "Specialty_Animate_Dead_Small.png",
+      "specialtyLarge" : "Specialty_Animate_Dead.png",
+      "large" : "Hero_Finneas.png",
+      "small" : "Hero_Finneas_Small.png"
+    },
+
+    "army" :
+    [
+      {
+        "creature" : "skeleton",
+        "max" : 20,
+        "min" : 30
+      },
+      {
+        "creature" : "walkingDead",
+        "max" : 6,
+        "min" : 4
+      },
+      {
+        "creature" : "wight",
+        "max" : 6,
+        "min" : 4
+      }
+    ],
+
+	"spellbook": 
+	[ "animateDead" ],
+
+    "skills" :
+    [ 
+	  {
+        "level" : "basic",
+        "skill" : "necromancy"
+      },
+	  
+	  {
+        "level" : "basic",
+        "skill" : "mysticism"
+      }
+    ],
+    
+		"specialty" : {
+			"bonuses" : {
+				"animateDead" : {
+					"subtype" : "spell.animateDead",
+					"type" : "SPECIAL_SPELL_LEV",
+					"updater" : "TIMES_HERO_LEVEL",
+					"val" : 3
+				}
+			}
+		}
+   }
+}
