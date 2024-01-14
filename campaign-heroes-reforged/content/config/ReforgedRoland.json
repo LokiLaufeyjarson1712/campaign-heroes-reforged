@@ -29,8 +29,8 @@
     [
       {
         "creature" : "pikeman",
-        "max" : 10,
-        "min" : 20
+        "max" : 20,
+        "min" : 10
       },
       {
         "creature" : "archer",

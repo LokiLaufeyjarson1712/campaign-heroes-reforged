@@ -29,8 +29,8 @@
     [
       {
         "creature" : "skeleton",
-        "max" : 20,
-        "min" : 30
+        "max" : 30,
+        "min" : 20
       },
       {
         "creature" : "walkingDead",
